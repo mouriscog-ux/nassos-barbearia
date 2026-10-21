@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#11110f" />
+<meta name="description" content="NASSO'S BARBEARIA em Itupeva. Cortes, barba e cuidado pessoal. Escolha seu serviço e solicite seu horário." />
+<meta property="og:title" content="NASSO'S BARBEARIA — Seu estilo. Sua identidade." />
+<meta property="og:description" content="Mais do que cortes e barbas, uma experiência de cuidado, personalidade e autoestima." />
+<title>NASSO'S BARBEARIA — Seu estilo. Sua identidade.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#11110f;--panel:#191917;--panel2:#20201d;--ink:#f4f0e8;--muted:#aaa69c;--line:rgba(244,240,232,.14);--accent:#c7a879;--accent2:#e5d0ad;--green:#a8c5a0;--red:#d89c91;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.55}body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 48px));margin:auto}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent2);font-size:.72rem;text-transform:uppercase;letter-spacing:.19em;font-weight:700}.eyebrow:before{content:"";width:28px;height:1px;background:var(--accent)}.section{padding:110px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section-head h2{font:600 clamp(2.2rem,5vw,4.3rem)/1.02 Manrope,sans-serif;letter-spacing:-.06em;margin:16px 0 0;max-width:700px}.section-head p{max-width:340px;color:var(--muted);margin:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 22px;border:1px solid var(--accent);background:var(--accent);color:#171613;font-weight:700;font-size:.84rem;transition:transform .25s,background .25s,color .25s,border-color .25s}.btn:hover{transform:translateY(-3px);background:var(--accent2);border-color:var(--accent2)}.btn-outline{background:transparent;color:var(--ink);border-color:rgba(244,240,232,.38)}.btn-outline:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}.arrow{font-size:1.1rem;transition:transform .25s}.btn:hover .arrow{transform:translateX(4px)}
+/* Header */.header{position:fixed;z-index:20;top:0;left:0;right:0;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}.header.scrolled{background:rgba(17,17,15,.94);backdrop-filter:blur(16px);border-color:var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.06em;font-size:.95rem}.brand-mark{width:36px;height:36px;border:1px solid var(--accent);display:grid;place-items:center;color:var(--accent);font:700 1rem Manrope;transform:rotate(45deg)}.brand-mark span{transform:rotate(-45deg)}.nav-links{display:flex;align-items:center;gap:28px;color:#d0ccc3;font-size:.82rem}.nav-links a{transition:color .2s}.nav-links a:hover{color:var(--accent2)}.nav-cta{min-height:42px;padding:0 16px;font-size:.78rem}.menu-toggle{display:none;background:none;color:var(--ink);border:1px solid var(--line);width:44px;height:44px;font-size:1.25rem}
+/* Hero */.hero{min-height:760px;height:min(900px,100svh);position:relative;display:flex;align-items:end;overflow:hidden;background:#26241f}.hero-media,.hero-media:after{position:absolute;inset:0}.hero-media video{width:100%;height:100%;object-fit:cover;object-position:center 45%;opacity:.68}.hero-media:after{content:"";background:linear-gradient(90deg,rgba(10,10,9,.88) 0%,rgba(10,10,9,.58) 47%,rgba(10,10,9,.12) 100%),linear-gradient(0deg,rgba(10,10,9,.78),transparent 42%)}.hero-fallback{position:absolute;inset:0;background:linear-gradient(120deg,#28251f,#4b4031 50%,#171715);background-image:linear-gradient(90deg,rgba(10,10,9,.83),rgba(10,10,9,.18)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=2000&q=85');background-size:cover;background-position:center;transform:scale(1.02)}.hero-inner{position:relative;z-index:1;padding-top:150px;padding-bottom:92px;width:100%}.hero-copy{max-width:770px}.hero h1{font:600 clamp(3.4rem,8.2vw,7.4rem)/.92 Manrope,sans-serif;letter-spacing:-.085em;margin:26px 0 25px}.hero h1 em{font-style:normal;color:var(--accent2)}.hero-copy>p{max-width:490px;color:#d0ccc3;font-size:1.05rem;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-meta{display:flex;align-items:center;gap:28px;margin-top:70px;color:#d0ccc3;font-size:.78rem}.meta-item{display:flex;gap:10px;align-items:center}.meta-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.hero-index{position:absolute;right:0;bottom:100px;color:rgba(244,240,232,.6);font-size:.7rem;letter-spacing:.18em;writing-mode:vertical-rl}.scroll-cue{position:absolute;right:24px;bottom:28px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.67rem;letter-spacing:.16em;text-transform:uppercase}.scroll-cue:after{content:"";height:42px;width:1px;background:var(--accent);animation:pulse 1.6s infinite}@keyframes pulse{0%,100%{transform:scaleY(.55);opacity:.5}50%{transform:scaleY(1);opacity:1}}
+/* ticker */.ticker{border-block:1px solid var(--line);overflow:hidden}.ticker-track{display:flex;justify-content:space-around;gap:35px;white-space:nowrap;padding:18px 0;color:var(--muted);font:700 .7rem Manrope;letter-spacing:.16em;text-transform:uppercase}.ticker-track span{display:flex;align-items:center;gap:24px}.ticker-track span:after{content:"✳";color:var(--accent);font-size:.85rem}
+/* Services */.services{background:#151513}.service-layout{display:grid;grid-template-columns:260px 1fr;gap:52px}.service-tabs{display:flex;flex-direction:column;border-top:1px solid var(--line)}.service-tab{display:flex;align-items:center;justify-content:space-between;gap:15px;text-align:left;padding:20px 0;background:none;color:var(--muted);border:0;border-bottom:1px solid var(--line);font-weight:600;transition:color .2s}.service-tab span:last-child{font-size:1.1rem}.service-tab.active,.service-tab:hover{color:var(--accent2)}.service-tab.active:before{content:"";width:18px;height:1px;background:var(--accent);margin-right:-8px}.service-list{border-top:1px solid var(--line)}.service-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:25px 0;border-bottom:1px solid var(--line);align-items:center;animation:rise .4s both}.service-row h3{font:600 1.17rem Manrope;margin:0 0 5px;letter-spacing:-.03em}.service-row p{margin:0;color:var(--muted);font-size:.86rem;max-width:600px}.service-duration{color:var(--muted);font-size:.75rem;margin-top:9px;display:block}.service-side{text-align:right;min-width:130px}.service-price{display:block;font:600 1.2rem Manrope;margin-bottom:12px}.service-book{background:none;border:0;border-bottom:1px solid var(--accent);color:var(--accent2);padding:0 0 5px;font-size:.79rem;font-weight:700}.service-book:hover{color:white;border-color:white}.services-foot{display:flex;justify-content:space-between;gap:20px;margin-top:26px;color:var(--muted);font-size:.78rem}.services-foot strong{color:var(--ink);font-weight:500}
+/* Manifesto */.manifesto{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.manifesto-visual{min-height:590px;position:relative;overflow:hidden;background:#29251f}.manifesto-visual img{position:absolute;width:100%;height:100%;object-fit:cover;filter:saturate(.72);transition:transform .8s}.manifesto-visual:hover img{transform:scale(1.04)}.visual-caption{position:absolute;bottom:22px;left:22px;background:rgba(17,17,15,.85);border:1px solid var(--line);padding:13px 16px;font-size:.73rem;letter-spacing:.08em;text-transform:uppercase}.manifesto-copy h2{font:600 clamp(2.6rem,5vw,4.6rem)/.98 Manrope;letter-spacing:-.07em;margin:20px 0 26px}.manifesto-copy h2 em{color:var(--accent2);font-style:normal}.manifesto-copy p{color:#b9b5ac;font-size:.96rem}.manifesto-copy .lead{color:var(--ink);font-size:1.08rem}.signature{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);color:var(--accent2);font:700 .75rem Manrope;letter-spacing:.12em;text-transform:uppercase}
+/* Gallery */.gallery{background:#e8e1d5;color:#1a1916}.gallery .eyebrow{color:#705b3c}.gallery .eyebrow:before{background:#9a7c50}.gallery .section-head p{color:#625e56}.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr 1fr;grid-template-rows:240px 240px;gap:12px}.gallery-item{position:relative;overflow:hidden;background:#c9c0b2;min-height:180px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:2/4}.gallery-item img{width:100%;height:100%;object-fit:cover;filter:saturate(.72);transition:transform .65s,filter .4s}.gallery-item:hover img{transform:scale(1.055);filter:saturate(1)}.gallery-label{position:absolute;left:16px;bottom:16px;padding:8px 10px;background:rgba(17,17,15,.8);color:white;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+/* Booking CTA */.booking-band{padding:84px 0;background:var(--accent);color:#171613}.booking-band-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.booking-band h2{font:700 clamp(2rem,4.5vw,4rem)/1 Manrope;letter-spacing:-.065em;margin:13px 0 0;max-width:700px}.booking-band .eyebrow{color:#443a2b}.booking-band .eyebrow:before{background:#443a2b}.booking-band .btn{background:#171613;color:var(--ink);border-color:#171613}.booking-band .btn:hover{background:#333027}
+/* details */.details-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.details-title{font:600 clamp(2.2rem,4vw,3.6rem)/1 Manrope;letter-spacing:-.06em;margin:17px 0 28px}.detail-row{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:.88rem}.detail-row .label{color:var(--muted)}.hours-list{display:grid;gap:0}.hour{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.85rem}.hour span:first-child{color:var(--muted)}.closed{color:var(--red)}.payment-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.payment-pill{border:1px solid var(--line);padding:8px 11px;color:#d6d1c8;font-size:.73rem}.map-link{display:inline-flex;align-items:center;gap:10px;color:var(--accent2);margin-top:25px;border-bottom:1px solid var(--accent);padding-bottom:5px;font-size:.83rem}
+/* Footer */footer{border-top:1px solid var(--line);padding:30px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:.75rem}.footer-links{display:flex;gap:18px}.footer-links a:hover{color:var(--accent2)}
+/* Modal */.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.76);backdrop-filter:blur(10px)}.modal.open{display:flex}.modal-card{width:min(700px,100%);max-height:92svh;overflow:auto;background:#181816;border:1px solid rgba(244,240,232,.18);box-shadow:0 30px 100px rgba(0,0,0,.5);animation:modalIn .25s ease-out}.modal-top{display:flex;justify-content:space-between;align-items:start;padding:24px 26px;border-bottom:1px solid var(--line)}.modal-top h2{font:700 1.7rem Manrope;letter-spacing:-.05em;margin:7px 0 0}.close-modal{border:1px solid var(--line);background:none;color:var(--ink);width:38px;height:38px;font-size:1.2rem}.modal-body{padding:25px 26px}.step-line{display:flex;gap:7px;margin-bottom:24px}.step-line span{height:3px;flex:1;background:#393832}.step-line span.done{background:var(--accent)}.form-label{display:block;color:#d4cfc5;font-size:.8rem;font-weight:600;margin:18px 0 8px}.field{width:100%;background:#10100f;color:var(--ink);border:1px solid #45443e;padding:13px 14px;outline:none;border-radius:0}.field:focus{border-color:var(--accent)}.field::placeholder{color:#77746d}.slot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.slot{padding:11px 6px;background:#20201d;border:1px solid #45443e;color:var(--ink);font-size:.8rem}.slot:hover:not(:disabled),.slot.selected{border-color:var(--accent);background:#3a3124;color:var(--accent2)}.slot:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:25px}.form-actions .btn{flex:1}.booking-summary{background:#22211d;border:1px solid var(--line);padding:15px;margin-top:18px;font-size:.84rem}.booking-summary strong{color:var(--accent2)}.notice{font-size:.76rem;color:var(--muted);margin-top:14px}.success-panel{text-align:center;padding:26px 10px}.success-icon{width:62px;height:62px;border:1px solid var(--green);color:var(--green);border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;font-size:1.6rem}.success-panel h3{font:700 1.8rem Manrope;margin:0 0 10px}.success-panel p{color:var(--muted)}.demo-warning{color:#e5c99c;background:#352d20;border:1px solid #655238;padding:11px 13px;font-size:.76rem;margin-top:16px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes modalIn{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:900px){.nav-links{gap:16px}.service-layout{grid-template-columns:210px 1fr;gap:30px}.manifesto{gap:5%}.manifesto-visual{min-height:500px}.gallery-grid{grid-template-rows:200px 200px}.details-grid{gap:35px}}
+@media(max-width:700px){.container{width:min(100% - 34px,var(--max))}.section{padding:76px 0}.nav{height:70px}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#171715;border-bottom:1px solid var(--line);padding:20px 24px 24px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links>a:not(.nav-cta){padding:13px 0;border-bottom:1px solid var(--line)}.nav-cta{margin-top:14px}.menu-toggle{display:block}.hero{min-height:720px;height:92svh;max-height:900px}.hero-inner{padding-top:120px;padding-bottom:70px}.hero h1{font-size:clamp(3.3rem,15vw,5.3rem)}.hero-copy>p{font-size:.95rem}.hero-meta{margin-top:48px;gap:14px;flex-wrap:wrap}.hero-index{display:none}.scroll-cue{right:17px;bottom:17px}.ticker-track{justify-content:flex-start;overflow:hidden;gap:28px}.section-head{display:block}.section-head p{margin-top:18px}.service-layout{grid-template-columns:1fr;gap:25px}.service-tabs{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:0;gap:8px}.service-tab{border:1px solid var(--line);padding:12px 10px;font-size:.76rem;justify-content:center;text-align:center}.service-tab span:last-child,.service-tab:before{display:none}.service-tab.active{border-color:var(--accent);background:#26231d}.service-row{grid-template-columns:1fr auto;gap:10px;padding:20px 0}.service-row h3{font-size:1rem}.service-row p{font-size:.8rem}.service-side{min-width:100px}.service-price{font-size:1.05rem}.services-foot{flex-direction:column;gap:8px}.manifesto{grid-template-columns:1fr;gap:34px}.manifesto-visual{min-height:430px;order:2}.manifesto-copy{order:1}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px 170px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:1/3}.booking-band{padding:62px 0}.booking-band-inner{align-items:flex-start;flex-direction:column}.details-grid{grid-template-columns:1fr;gap:48px}.details-title{font-size:2.8rem}.detail-row{grid-template-columns:100px 1fr}.footer-inner{align-items:flex-start;flex-direction:column}.slot-grid{grid-template-columns:repeat(3,1fr)}.modal-top,.modal-body{padding:20px}.form-actions{flex-direction:column}.form-actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="NASSO'S Barbearia, início"><span class="brand-mark"><span>N</span></span><span>NASSO’S <span style="color:var(--accent)">BARBEARIA</span></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a><a href="#sobre">A barbearia</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+      <button class="btn nav-cta" data-book>AGENDAR HORÁRIO <span class="arrow">↗</span></button>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <div class="hero-fallback" id="heroFallback"></div>
+    <video id="heroVideo" autoplay muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80" style="display:none">
+      <source src="videos/hero-barber.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">Barbearia contemporânea · Itupeva, SP</div>
+      <h1>Seu estilo.<br><em>Sua identidade.</em></h1>
+      <p>Mais do que cortes e barbas, uma experiência de cuidado, personalidade e autoestima.</p>
+      <div class="hero-actions"><button class="btn" data-book>AGENDAR HORÁRIO <span class="arrow">↗</span></button><a class="btn btn-outline" href="#servicos">EXPLORAR SERVIÇOS <span class="arrow">↓</span></a></div>
+      <div class="hero-meta"><span class="meta-item"><span class="meta-dot"></span> Atendimento com hora marcada</span><span class="meta-item">Itupeva — SP</span></div>
+    </div>
+    <div class="hero-index">NASSO’S / EST. PERSONAL STYLE</div>
+  </div>
+  <a href="#servicos" class="scroll-cue">Explore</a>
+</section>
+<div class="ticker"><div class="container ticker-track"><span>Cuidado em cada detalhe</span><span>Técnica & personalidade</span><span>Seu estilo, sua identidade</span><span>NASSO’S BARBEARIA</span></div></div>
+
+<section class="section services" id="servicos">
+  <div class="container">
+    <div class="section-head reveal"><div><div class="eyebrow">Menu de serviços</div><h2>O corte certo.<br>O cuidado completo.</h2></div><p>Escolha o serviço ideal para você. Veja os valores e solicite seu horário em poucos passos.</p></div>
+    <div class="service-layout reveal">
+      <div class="service-tabs" role="tablist" aria-label="Categorias de serviços">
+        <button class="service-tab active" data-category="barba" role="tab" aria-selected="true">Barba e Bigode <span>↗</span></button>
+        <button class="service-tab" data-category="cabelo" role="tab" aria-selected="false">Cabelo <span>↗</span></button>
+        <button class="service-tab" data-category="cor" role="tab" aria-selected="false">Coloração <span>↗</span></button>
+      </div>
+      <div>
+        <div class="service-list" id="serviceList" aria-live="polite"></div>
+        <div class="services-foot"><span><strong>Valores transparentes.</strong> Sem surpresas.</span><span>Selecione “Agendar” para escolher a data.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="container manifesto">
+    <div class="manifesto-visual reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85" alt="Barbeiro trabalhando em um corte masculino">
+      <div class="visual-caption">Técnica. Estilo. Confiança.</div>
+    </div>
+    <div class="manifesto-copy reveal">
+      <div class="eyebrow">A essência NASSO’S</div>
+      <h2>Muito além<br><em>do corte.</em></h2>
+      <p class="lead">A NASSO’S BARBEARIA nasceu com um propósito que vai muito além de cuidar da aparência: restaurar a autoestima e valorizar a identidade de cada cliente que passa por aqui.</p>
+      <p>Somos uma barbearia moderna, que une técnica, estilo e atendimento de excelência para transformar cada corte, cada barba e cada detalhe em uma experiência de cuidado e confiança.</p>
+      <p>Acreditamos que se sentir bem com a própria imagem faz diferença na forma como encaramos o mundo. Por isso, criamos um ambiente pensado para que cada cliente possa desacelerar, cuidar de si e sair daqui se sentindo ainda melhor do que quando chegou.</p>
+      <p>Mais do que cortes e barbas, entregamos experiência, personalidade e autoestima.</p>
+      <div class="signature">NASSO’S BARBEARIA · Itupeva, SP</div>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <div class="section-head reveal"><div><div class="eyebrow">Detalhes que fazem diferença</div><h2>Estilo em cada<br>ângulo.</h2></div><p>Uma seleção visual de referências de cortes, ferramentas e técnicas de barbearia. Imagens ilustrativas, não necessariamente trabalhos realizados pela NASSO’S.</p></div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80" alt="Detalhe de corte masculino"><span class="gallery-label">Precisão no corte</span></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Interior de barbearia"><span class="gallery-label">O ambiente</span></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Barbeiro realizando acabamento"><span class="gallery-label">Acabamento</span></div>
+      <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&q=80" alt="Barbeiro cortando cabelo com máquina"><span class="gallery-label">Técnica e personalidade</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="booking-band">
+  <div class="container booking-band-inner">
+    <div><div class="eyebrow">Seu próximo visual começa aqui</div><h2>Seu horário.<br>Seu momento.</h2></div>
+    <button class="btn" data-book>ESCOLHER UM SERVIÇO <span class="arrow">↗</span></button>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="container details-grid">
+    <div class="reveal">
+      <div class="eyebrow">Encontre a NASSO’S</div><h2 class="details-title">A gente te<br>espera por aqui.</h2>
+      <div class="detail-row"><span class="label">Endereço</span><span>Rua João Batista Passoni, 144<br>Parque das Laranjeiras<br>Itupeva — SP, 13296-040</span></div>
+      <div class="detail-row"><span class="label">Telefone</span><a href="tel:+5511926291109">(11) 92629-1109</a></div>
+      <div class="detail-row"><span class="label">Facilidades</span><span>Wi-Fi · TV · Adultos e crianças</span></div>
+      <div class="payment-list"><span class="payment-pill">Crédito</span><span class="payment-pill">Débito</span><span class="payment-pill">Dinheiro</span><span class="payment-pill">PIX</span></div>
+      <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rua+Jo%C3%A3o+Batista+Passoni%2C+144%2C+Parque+das+Laranjeiras%2C+Itupeva%2C+SP">ABRIR NO GOOGLE MAPS ↗</a>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Funcionamento</div><h2 class="details-title">Planeje sua<br>visita.</h2>
+      <div class="hours-list">
+        <div class="hour"><span>Segunda-feira</span><span>13h30 — 18h</span></div>
+        <div class="hour"><span>Terça-feira</span><span>13h30 — 18h</span></div>
+        <div class="hour"><span>Quarta-feira</span><span>13h30 — 18h</span></div>
+        <div class="hour"><span>Quinta-feira</span><span>13h30 — 18h</span></div>
+        <div class="hour"><span>Sexta-feira</span><span>13h30 — 18h</span></div>
+        <div class="hour"><span>Sábado</span><span>09h30 — 15h</span></div>
+        <div class="hour"><span>Domingo</span><span class="closed">Fechado</span></div>
+      </div>
+      <p style="color:var(--muted);font-size:.8rem;margin-top:20px">Atendimento em português. Para dúvidas, fale diretamente com a barbearia.</p>
+      <a class="map-link" target="_blank" rel="noopener" href="https://wa.me/5511926291109?text=Ol%C3%A1%2C%20NASSO%E2%80%99S%20BARBEARIA!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">FALAR PELO WHATSAPP ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-inner"><a class="brand" href="#inicio"><span class="brand-mark"><span>N</span></span><span>NASSO’S BARBEARIA</span></a><span>© <span id="year"></span> NASSO’S BARBEARIA. Todos os direitos reservados.</span><div class="footer-links"><a href="#servicos">Serviços</a><a href="#contato">Contato</a><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
+
+<div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <div class="modal-top"><div><div class="eyebrow">Agendamento NASSO’S</div><h2 id="modalTitle">Reserve seu momento.</h2></div><button class="close-modal" id="closeModal" aria-label="Fechar">×</button></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+<script>
+const services = [
+ {id:"barboterapia",name:"Barboterapia",category:"barba",duration:40,price:55,description:"Serviço de barba realizado opcionalmente com toalha quente e massagem."},
+ {id:"corte-barba",name:"Corte e Barba",category:"barba",duration:60,price:95,description:"Corte de cabelo e barboterapia."},
+ {id:"depilacao",name:"Depilação Nariz e Orelha",category:"barba",duration:10,price:25,description:"Depilação de nariz e orelha na cera."},
+ {id:"corte-1-pente",name:"Corte 1 Pente",category:"cabelo",duration:25,price:30,description:"Corte raspado, utilizando apenas 1 pente da máquina ou a máquina zero."},
+ {id:"corte-cabelo",name:"Corte de Cabelo",category:"cabelo",duration:40,price:55,description:"Corte de cabelo com degradê ou na tesoura."},
+ {id:"sobrancelha",name:"Sobrancelha",category:"cabelo",duration:10,price:10,description:"Design de sobrancelha na navalha."},
+ {id:"luzes",name:"Luzes",category:"cor",duration:30,price:100,description:"Descoloração de mechas no cabelo."},
+ {id:"platinado",name:"Platinado",category:"cor",duration:40,price:140,description:"Descoloração total do cabelo."}
+];
+const categories = {barba:"Barba e Bigode",cabelo:"Cabelo",cor:"Coloração e Descoloração Capilar"};
+const brl = n => n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const $ = s => document.querySelector(s);
+let activeCategory="barba", booking={service:null,date:"",time:"",name:"",phone:"",email:""}, step=1;
+function renderServices(){
+ const list=$("#serviceList");
+ list.innerHTML=services.filter(s=>s.category===activeCategory).map((s,i)=>`<article class="service-row" style="animation-delay:${i*55}ms"><div><h3>${s.name}</h3><p>${s.description}</p><span class="service-duration">${s.duration} minutos</span></div><div class="service-side"><span class="service-price">${brl(s.price)}</span><button class="service-book" data-service="${s.id}">Agendar ↗</button></div></article>`).join("");
+ document.querySelectorAll("[data-service]").forEach(b=>b.addEventListener("click",()=>openBooking(b.dataset.service)));
+}
+document.querySelectorAll("[data-category]").forEach(b=>b.addEventListener("click",()=>{
+ activeCategory=b.dataset.category;
+ document.querySelectorAll("[data-category]").forEach(t=>{t.classList.toggle("active",t===b);t.setAttribute("aria-selected",t===b?"true":"false")});
+ renderServices();
+}));
+function openBooking(serviceId=null){
+ booking={service:services.find(s=>s.id===serviceId)||null,date:"",time:"",name:"",phone:"",email:""};step=1;
+ $("#bookingModal").classList.add("open");document.body.classList.add("modal-open");renderBooking();
+}
+function closeBooking(){$("#bookingModal").classList.remove("open");document.body.classList.remove("modal-open")}
+function dateLocal(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}
+function nextDates(n=14){const arr=[],d=new Date();d.setHours(12,0,0,0);for(let i=0;i<35&&arr.length<n;i++){d.setDate(d.getDate()+1);if(d.getDay()!==0)arr.push(new Date(d))}return arr}
+function scheduleFor(date,service){
+ const d=new Date(date+"T12:00:00"),day=d.getDay();
+ if(day===0)return [];
+ const start=day===6?9*60+30:13*60+30,end=day===6?15*60:18*60;
+ const result=[];for(let t=start;t+service.duration<=end;t+=30){const h=Math.floor(t/60),m=t%60;result.push(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`)}return result;
+}
+function renderBooking(){
+ const body=$("#modalBody");
+ const dateOpts=nextDates(12).map(d=>`<option value="${dateLocal(d)}" ${booking.date===dateLocal(d)?"selected":""}>${d.toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"long"})}</option>`).join("");
+ body.innerHTML=`<div class="step-line">${[1,2,3].map(i=>`<span class="${step>=i?"done":""}"></span>`).join("")}</div>`;
+ if(step===1){
+ body.innerHTML+=`<div class="eyebrow">Etapa 01 / Serviço</div><label class="form-label" for="serviceSelect">Qual serviço você deseja?</label><select class="field" id="serviceSelect"><option value="">Selecione um serviço</option>${services.map(s=>`<option value="${s.id}" ${booking.service?.id===s.id?"selected":""}>${s.name} — ${brl(s.price)} · ${s.duration} min</option>`).join("")}</select><div id="selectedService"></div><div class="form-actions"><button class="btn" id="stepNext" ${booking.service?"":"disabled"}>ESCOLHER DATA E HORÁRIO <span class="arrow">→</span></button></div><p class="notice">Você verá a disponibilidade real após o sistema de reservas ser conectado.</p>`;
+ body.querySelector("#serviceSelect").addEventListener("change",e=>{booking.service=services.find(s=>s.id===e.target.value)||null;$("#stepNext").disabled=!booking.service;$("#selectedService").innerHTML=booking.service?`<div class="booking-summary"><strong>${booking.service.name}</strong><br>${booking.service.duration} minutos · ${brl(booking.service.price)}</div>`:""});
+ body.querySelector("#stepNext").addEventListener("click",()=>{if(booking.service){step=2;renderBooking()}});
+ } else if(step===2){
+ body.innerHTML+=`<div class="eyebrow">Etapa 02 / Data e horário</div><label class="form-label" for="dateSelect">Escolha uma data</label><select class="field" id="dateSelect">${dateOpts}</select><div class="form-label">Horários ilustrativos para demonstração</div><div class="slot-grid" id="slotGrid"></div><div class="booking-summary"><strong>${booking.service.name}</strong> · ${booking.service.duration} min · ${brl(booking.service.price)}</div><div class="demo-warning">Demonstração visual: estes horários ainda não consultam uma agenda real e não devem ser usados para aceitar reservas.</div><div class="form-actions"><button class="btn btn-outline" id="stepBack">VOLTAR</button><button class="btn" id="stepNext" ${booking.time?"":"disabled"}>CONTINUAR <span class="arrow">→</span></button></div>`;
+ const drawSlots=()=>{booking.date=$("#dateSelect").value;const slots=scheduleFor(booking.date,booking.service);$("#slotGrid").innerHTML=slots.map((t,i)=>`<button class="slot ${booking.time===t?"selected":""}" data-time="${t}" ${i%5===3?"disabled":""}>${t}</button>`).join("")||"<p>Não há horários neste dia.</p>";$("#slotGrid").querySelectorAll("[data-time]").forEach(b=>b.addEventListener("click",()=>{booking.time=b.dataset.time;renderBooking()}))};
+ body.querySelector("#dateSelect").addEventListener("change",()=>{booking.time="";drawSlots();$("#stepNext").disabled=true});drawSlots();
+ body.querySelector("#stepBack").addEventListener("click",()=>{step=1;renderBooking()});
+ body.querySelector("#stepNext").addEventListener("click",()=>{if(booking.time){step=3;renderBooking()}});
+ } else {
+ body.innerHTML+=`<div class="eyebrow">Etapa 03 / Seus dados</div><div class="booking-summary"><strong>${booking.service.name}</strong><br>${new Date(booking.date+"T12:00:00").toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"long"})} às ${booking.time}<br>${booking.service.duration} minutos · ${brl(booking.service.price)}</div><form id="customerForm"><label class="form-label" for="customerName">Nome completo</label><input class="field" id="customerName" name="name" required minlength="2" autocomplete="name" placeholder="Como podemos te chamar?" value="${booking.name}"><label class="form-label" for="customerPhone">WhatsApp / telefone</label><input class="field" id="customerPhone" name="phone" required autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" value="${booking.phone}"><label class="form-label" for="customerEmail">E-mail (opcional)</label><input class="field" id="customerEmail" name="email" type="email" autocomplete="email" placeholder="voce@email.com" value="${booking.email}"><div class="demo-warning">Este protótipo ainda não salva reservas no banco de dados. Ao continuar, você poderá preparar uma mensagem para o WhatsApp da barbearia, mas o horário não ficará bloqueado automaticamente.</div><div class="form-actions"><button type="button" class="btn btn-outline" id="stepBack">VOLTAR</button><button type="submit" class="btn">CONTINUAR <span class="arrow">→</span></button></div></form>`;
+ body.querySelector("#stepBack").addEventListener("click",()=>{step=2;renderBooking()});
+ body.querySelector("#customerForm").addEventListener("submit",e=>{
+ e.preventDefault();booking.name=$("#customerName").value.trim();booking.phone=$("#customerPhone").value.trim();booking.email=$("#customerEmail").value.trim();step=4;renderBooking();
+ });
+ }
+ if(step===4){
+ body.innerHTML=`<div class="success-panel"><div class="success-icon">✓</div><div class="eyebrow" style="justify-content:center">Solicitação preparada</div><h3>Quase lá, ${booking.name.split(" ")[0]}.</h3><p>Confira os dados e envie a mensagem para a NASSO’S BARBEARIA pelo WhatsApp.</p><div class="booking-summary" style="text-align:left"><strong>${booking.service.name}</strong><br>${new Date(booking.date+"T12:00:00").toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"long"})} às ${booking.time}<br>${booking.service.duration} minutos · ${brl(booking.service.price)}<br>Cliente: ${booking.name}<br>Telefone: ${booking.phone}</div><div class="demo-warning">Importante: o envio pelo WhatsApp não confirma nem bloqueia o horário automaticamente. A confirmação depende da barbearia. Para isso, é necessário conectar o backend Supabase.</div><div class="form-actions"><button class="btn btn-outline" id="finishClose">FECHAR</button><a class="btn" id="sendWhatsApp" target="_blank" rel="noopener" href="#">ENVIAR PELO WHATSAPP ↗</a></div></div>`;
+ const message=`Olá, NASSO’S BARBEARIA! Gostaria de solicitar um agendamento.\n\nServiço: ${booking.service.name}\nData: ${new Date(booking.date+"T12:00:00").toLocaleDateString("pt-BR")}\nHorário desejado: ${booking.time}\nDuração: ${booking.service.duration} minutos\nValor: ${brl(booking.service.price)}\nNome: ${booking.name}\nTelefone: ${booking.phone}${booking.email?`\nE-mail: ${booking.email}`:""}\n\nPor favor, confirmem se o horário está disponível.`;
+ $("#sendWhatsApp").href="https://wa.me/5511926291109?text="+encodeURIComponent(message);
+ $("#finishClose").addEventListener("click",closeBooking);
+ }
+}
+document.querySelectorAll("[data-book]").forEach(b=>b.addEventListener("click",()=>openBooking()));
+$("#closeModal").addEventListener("click",closeBooking);
+$("#bookingModal").addEventListener("click",e=>{if(e.target===$("#bookingModal"))closeBooking()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeBooking()});
+$("#menuToggle").addEventListener("click",()=>{const open=$("#navLinks").classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",String(open));$("#menuToggle").textContent=open?"×":"☰"});
+document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>{$("#navLinks").classList.remove("open");$("#menuToggle").setAttribute("aria-expanded","false");$("#menuToggle").textContent="☰"}));
+window.addEventListener("scroll",()=>$("#header").classList.toggle("scrolled",window.scrollY>20),{passive:true});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+$("#year").textContent=new Date().getFullYear();
+renderServices();
+const video=$("#heroVideo");
+video.addEventListener("canplay",()=>{video.style.display="block";$("#heroFallback").style.display="none"});
+video.addEventListener("error",()=>{video.style.display="none";$("#heroFallback").style.display="block"});
+</script>
+</body>
+</html>
